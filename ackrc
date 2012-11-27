@@ -3,12 +3,23 @@
 --smart-case
 # follow symlinks
 --follow
+# show which types each file has
+--show-types
+# ignore some annoying types
+--noxml
 
 #++++ scala ++++#
 # search sbt quick configuration files
 --type-set=sbt=.sbt
+--type-add=scala=.sbt
 # ignore stuff in sbt generated target dirs
 --ignore-dir=target
 
-#++++ markdown ++++#
---type-set=plaintext=.md,.markdown
+#++++ plain text ++++#
+--type-set=markdown=.md,.markdown
+--type-set=txt=.txt
+--type-set=conf=.properties,.conf
+
+#++++ java ++++#
+# remove .properties from java type
+--type-set=java=.java
