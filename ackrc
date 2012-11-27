@@ -1,0 +1,14 @@
+#++++ general ++++#
+# only use case sensitivity if query has mixed case
+--smart-case
+# follow symlinks
+--follow
+
+#++++ scala ++++#
+# search sbt quick configuration files
+--type-set=sbt=.sbt
+# ignore stuff in sbt generated target dirs
+--ignore-dir=target
+
+#++++ markdown ++++#
+--type-set=plaintext=.md,.markdown
