@@ -1,0 +1,14 @@
+[user]
+  name = Yuvi Masory
+  email = ymasory@gmail.com
+
+[alias]
+  br = branch
+  ci = commit
+  s = status
+  lg = log -p
+  co = checkout
+  df = diff
+
+[push]
+  default = simple   
